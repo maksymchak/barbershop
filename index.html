@@ -19,7 +19,9 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="login-link">Вход</li>
+					<li class="login-link">
+						<a class="login-link" href="login.html">Вход</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -71,8 +73,8 @@
 					<a href="#"><img src="img/studio.jpg" width="286"
 					 height="164" alt="Интерьер"></a>
 				</figure>
-				<span class="button gallery-button gallery-button-back">Назад</span>
-				<span class="button gallery-button gallery-button-next">Вперед</span>
+				<button class="button gallery-button gallery-button-back">Назад</button>
+				<button class="button gallery-button gallery-button-next">Вперед</button>
 			</section>
 			<section class="contacts">
 				<h2>Контактная информация</h2>
@@ -97,20 +99,20 @@
 					 с Вами для подтверждения брони</p>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 					<p class="appointment-item">
-						Дата
-						<input type="text" name="date" placeholder="08.10.2017">
+						<label for="appointment-date">Дата</label>
+						<input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
 					</p>
 					<p class="appointment-item">
-						Время
-						<input type="text" name="time" placeholder="10:00">
+						<label for="appointment-time">Время</label>
+						<input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
 					</p>
 					<p class="appointment-item">
-						Ваше имя
-						<input type="text" name="name" placeholder="Борода">
+						<label for="appointment-name">Ваше имя</label>
+						<input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
 					</p>
 					<p class="appointment-item">
-						Телефон
-						<input type="tel" name="phone" placeholder="+ 38 093 456-78-90">
+						<label for="appointment-phone">Телефон</label>
+						<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+ 38 093 456-78-90">
 					</p>
 					<button class="button" type="submit">Отправить</button>
 				</form>
@@ -141,23 +143,31 @@
 				<p>Введите пожалуйста свой логин и пароль</p>
 				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 					<p>
-						<input class="login-icon-user" type="text" name="login" placeholder="Логин">
+						<label class="visually-hidden" for="user-login">Логин</label>
+						<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
 					</p>
 					<p>
-						<input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+						<label class="visually-hidden" for="user-password">Пароль</label>
+						<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
 					</p>
 					<p class="login-password-info">
-						<input type="checkbox" name="remember" class="visually-hidden">
-						Запомните меня
+						<label class="login-checkbox">
+							<input type="checkbox" name="remember" class="visually-hidden">
+							<span class="checkbox-indicator"></span>
+							Запомните меня							
+						</label>
 						<a class="restore" href="#">Я забыл пароль!</a>
 					</p>
 					<button class="button" type="submit">Войти</button>
 				</form>
-				<span class="modal-close">x</span>
+				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 			<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>	
-				<span class="modal-close">x</span>
+				<p>
+					<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу г. Киев, Б. Шевченка, Д. 11/18">
+				</p>
+				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 	</body>
 </html>

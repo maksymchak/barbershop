@@ -92,19 +92,24 @@
 				<p>Введите пожалуйста свой логин и пароль</p>
 				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 					<p>
-						<input class="login-icon-user" type="text" name="login" placeholder="Логин">
+						<label class="visually-hidden" for="user-login">Логин</label>
+						<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
 					</p>
-					<p
-					><input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-				</p>
+					<p>
+						<label class="visually-hidden" for="user-password">Пароль</label>
+						<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+					</p>
 					<p class="login-password-info">
-						<input type="checkbox" name="remember" class="visually-hidden">
-						Запомните меня
+						<label class="login-checkbox">
+							<input type="checkbox" name="remember" class="visually-hidden">
+							<span class="checkbox-indicator"></span>
+							Запомните меня							
+						</label>
 						<a class="restore" href="#">Я забыл пароль!</a>
 					</p>
 					<button class="button" type="submit">Войти</button>
 				</form>
-				<span class="modal-close">x</span>
+				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 	</body>
 </html>
