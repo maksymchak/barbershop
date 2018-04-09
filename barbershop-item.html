@@ -8,22 +8,21 @@
 		<link rel="stylesheet" href="css/normalize.css">	
 		<link href="css/style.css" rel="stylesheet">	
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-header-logo">
-					<img src="img/index-logo.svg" width="368" height="153" 
-					alt="Логотип барбершопа «Бородинский»">
-				</a>	
-				<ul class="site-navigation">
+			<nav class="main-navigation container">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+				</a>
+					<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="news.html">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="catalog.html">Магазин</a></li>
+					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="login-link">Вход</li>
+					<li><a class="login-link" href="login.html">Вход</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -33,63 +32,67 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Средства для ухода</a></li>
-				<li class="breadcrumps-current">Набор для путешествий «Baxter of California»</li>
+				<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
 			</ul>
-			<section class="product-photos">
-				<h2 class="visually-hidden">Изображения товара</h2>
-				<p class="product-photo-full">
-					<img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
-				</p>
-				<ul class="product-photo-preview">
-					<li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
-					<li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
-					<li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
-				</ul>
-			</section>
-			<section class="product-info">
-				<h2 class="visually-hidden">Описание товара</h2>
-				<p class="product-availability">Есть в наличии</p>
-				<p class="product-article">Артикул: dexter-ae</p>
-				<p class="product-text">Travel Kit - необходимый 
-					аксессуар во время любого путешествия. В аккуратной
-					кожаной сумке находится все, что нужно для бритья и
-					ухода за кожей во время рабочей поездки или отдыха:
-					средство для умывания, увлажняющий крем, крем для
-					бритья, крем после бритья, шампунь. Набор также может
-					стать отличным подарком.</p>
-				<p class="product-price">
-					<b>900 ₴</b>
-					<a class="button" href="#">Купить</a>
-				</p>
-				<h3>В набор входят:</h3>
-				<ul>
-					<li>Средство для умывания (50 мл)</li>
-					<li>Увлажняющий крем (50 мл)</li>
-					<li>Крем для бритья (50 мл)</li>
-					<li>Крем после бритья, шампунь (50 мл)</li>
-					<li>Удобная кожаная косметичка</li>
-				</ul>
-			</section>
+			<div class="catalog-columns">
+				<section class="product-photos">
+					<h2 class="visually-hidden">Изображения товара</h2>
+					<p class="product-photo-full">
+						<img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+					</p>
+					<ul class="product-photo-preview">
+						<li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
+						<li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
+						<li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
+					</ul>
+				</section>
+				<section class="product-info">
+					<h2 class="visually-hidden">Описание товара</h2>
+					<p class="product-availability">Есть в наличии</p>
+					<p class="product-article">Артикул: dexter-ae</p>
+					<p class="product-text">Travel Kit - необходимый 
+						аксессуар во время любого путешествия. В аккуратной
+						кожаной сумке находится все, что нужно для бритья и
+						ухода за кожей во время рабочей поездки или отдыха:
+						средство для умывания, увлажняющий крем, крем для
+						бритья, крем после бритья, шампунь. Набор также может
+						стать отличным подарком.</p>
+					<p class="product-price">
+						<b>900 ₴</b>
+						<a class="button" href="#">Купить</a>
+					</p>
+					<h3>В набор входят:</h3>
+					<ul>
+						<li>Средство для умывания (50 мл)</li>
+						<li>Увлажняющий крем (50 мл)</li>
+						<li>Крем для бритья (50 мл)</li>
+						<li>Крем после бритья, шампунь (50 мл)</li>
+						<li>Удобная кожаная косметичка</li>
+					</ul>
+				</section>
+			</div>	
 		</main>
 			<footer class="main-footer">
-				<p class="footer-contacts">
-					Барбершоп «Бородинский»<br>
-					Адрес: г. Киев, Б. Шевченка, Д. 11/18<br>
-					<a href="map.html">Как нас найти?</a><br>
-					Телефон: +38 (093) 088-24-55
-				</p>
-				<div class="footer-social">
-					<b>Давайте дружить!</b>
-					<ul>
-						<li><a class="social-button" href="#">Вконтакте</a></li>
-						<li><a class="social-button" href="#">Фейсбук</a></li>
-						<li><a class="social-button" href="#">Инстаграм</a></li>
-					</ul>
+				<div class="container">
+					<p class="footer-contacts">
+						Барбершоп «Бородинский»<br>
+						Адрес: г. Киев, Б. Шевченка, Д. 11/18<br>
+						<a href="map.html">Как нас найти?</a><br>
+						Телефон: +38 (093) 088-24-55
+					</p>
+					<div class="footer-social">
+						<b>Давайте дружить!</b>
+						<ul>
+							<li><a class="social-button" href="#">Вконтакте</a></li>
+							<li><a class="social-button" href="#">Фейсбук</a></li>
+							<li><a class="social-button" href="#">Инстаграм</a></li>
+						</ul>
+					</div>
+					<p class="footer-copyright">
+						<b>Разработано:</b>
+						<a class="button" href="#">Anton Maksymchak</a>
+					</p>
 				</div>
-				<p class="footer-copyright">
-					<b>Разработано:</b>
-					<a class="button" href="#">Anton Maksymchak</a>
-				</p>
 			</footer>
 			<section class="modal modal-login">
 				<h2>Личный кабинет</h2>
