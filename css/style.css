@@ -457,6 +457,7 @@ a {
 .catalog-columns {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 50px;
 }
 
 .filters {
@@ -571,6 +572,11 @@ a {
 }
 
 .product-photo-preview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
 	list-style: none;
 }
 
@@ -579,22 +585,47 @@ a {
 }
 
 .product-photo-preview li {
-	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+	line-height: 0;
+}
+
+.product-photo-preview li:hover {
+	box-shadow: 2px 4px 25px 0px rgba(0, 1, 1, 0.3);
 }
 
 .product-photo-full {
-	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+	line-height: 0;
+}
+
+.product-photo-full:hover {
+	box-shadow: 2px 4px 25px 0px rgba(0, 1, 1, 0.3);
+}
+
+.product-availability {
+	margin-top: 30px;
+	padding: 0;
+	display: inline-block;
 }
 
 .product-article {
 	text-align: right;
 	color: #aeaeae;
+	display: inline-block;
+	float: right;
+    margin-top: 30px;
 }
 
 .product-price b {
-	line-height: 20px;
-	text-align: center;
-	background-color: #e5e5e5;
+    width: 60px;
+    margin-top: 36px;
+    margin-bottom: 62px;
+    text-align: center;
+    background-color: #e5e5e5;
+    display: inline-block;
+    padding: 8px 25px 12px 25px;
+    margin-right: -4px;
+    font-size: 15px;
 }
 
 .product-info {
@@ -608,22 +639,25 @@ a {
 
 .product-info ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 25px;
 }
 
 .product-info li {
 	position: relative;
-	padding-left: 23px;
+
 }
 
 .product-info li::before {
-	content: "";
-	position: absolute;
-	top: 7px;
-	left: 2px;
-	width: 8px;
-	height: 8px;
-	background-color: #000000;
-	transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: #000000;
+    top: 8px;
+    right: 383px;
 }
 
 .inner-content {
@@ -967,13 +1001,13 @@ a {
 }
 
 .login-icon-user {
-	background-image: url("img/user.svg");
+	background-image: url("../img/user.svg");
 	background-position: 270px center;
 	background-repeat: no-repeat;
 }
 
 .login-icon-password {
-	background-image: url("img/lock.svg");
+	background-image: url("../img/lock.svg");
 	background-position: 270px center;
 	background-repeat: no-repeat;
 }
