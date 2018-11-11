@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-	margin-bottom: 75px;
+	margin-bottom: 100px;
 }
 
 .inner-page .main-header {
@@ -102,7 +102,7 @@ a {
 
 .main-header-logo {
 	order: 2;
-	width: 368px;
+	width: 268px;
 	height: 153px;
 }
 
@@ -115,7 +115,7 @@ a {
 
 .main-navigation-wrapper {
 	width: 100%;
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 	background-color: #000000;
 }
 
@@ -603,7 +603,7 @@ a {
 }
 
 .product-availability {
-	margin-top: 30px;
+	margin-top: 33px;
 	padding: 0;
 	display: inline-block;
 }
@@ -842,7 +842,7 @@ a {
 
 .footer-social b {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 24px;
 }
 
 .social-button {
@@ -878,7 +878,7 @@ a {
 
 .footer-copyright b {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 24px;
 }
 
 .footer-copyright .button:hover, 
