@@ -2,27 +2,28 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Барбершоп</title>
+		<title>Barbershop</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" 
 		rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">	
 		<link href="css/style.css" rel="stylesheet">	
 	</head>
 	<body>
+
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="main-header-logo">
+				<a href="index.html" class="main-header-logo">
 					<img src="img/index-logo.png" width="268" height="153" 
 					alt="Логотип барбершопа">
 				</a>
 				<div class="main-navigation-wrapper">
 					<div class="container">
 						<ul class="site-navigation">
-							<li><a href="#">Информация</a></li>
-							<li><a href="#">Новости</a></li>
+							<li><a href="#info-point">Информация</a></li>
+							<li><a href="#news-point">Новости</a></li>
 							<li><a href="price.html">Прайс-лист</a></li>
 							<li><a href="catalog.html">Магазин</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#contacts-point">Контакты</a></li>
 						</ul>
 						<ul class="user-navigation">
 							<li><a class="login-link" href="login.html">Вход</a>
@@ -32,9 +33,11 @@
 				</div>
 			</nav>
 		</header>
+
 		<main class="container">
 			<h1 class="visually-hidden">Барбершоп</h1>
-			<section class="features">
+
+			<section class="features" id="info-point">
 				<h2 class="visually-hidden">Преимущества</h2>
 				<ul class="features-list">
 					<li class="feature-item">
@@ -57,8 +60,10 @@
 					</li>
 				</ul>
 			</section>
+
 			<div class="index-columns">
-				<section class="news">
+
+				<section class="news" id="news-point">
 					<h2>Новости</h2>
 					<ul class="news-list">
 						<li class="news-item">
@@ -75,6 +80,7 @@
 					</ul>
 					<a class="button" href="#">Все новости</a>
 				</section>
+
 				<section class="gallery">
 					<h2>Фотогалерея</h2>
 					<div class="gallery-container">
@@ -86,9 +92,12 @@
 						<button class="button gallery-button gallery-button-next" >Вперед</button>
 					</div>
 				</section>
+
 			</div>
+
 			<div class="index-columns">
-				<section class="contacts">
+
+				<section class="contacts" id="contacts-point">
 					<h2>Контактная информация</h2>
 					<p>
 						Барбершоп контакты<br>
@@ -104,6 +113,7 @@
 					<a class="button contacts-button contacts-button-map" href="map.html" >Как проехать</a>
 					<a class="button contacts-button" href="#" >Обратная связь</a>
 				</section>
+
 				<section class="appointment">
 					<h2>Записаться</h2>
 					<p class="appointment-info">
@@ -129,10 +139,14 @@
 						<button class="button" type="submit">Отправить</button>
 					</form>
 				</section>
+
 			</div>
+
 		</main>
+
 		<footer class="main-footer">
 			<div class="container">
+
 				<p class="footer-contacts">
 					Барбершоп контакты<br>
 					Адрес: г. Киев,<br> 
@@ -164,8 +178,10 @@
 					<b>Разработано:</b>
 					<a class="button" href="https://www.linkedin.com/in/anton-maksymchak-849534153">Maksymchak</a>
 				</p>
+
 			</div>
 		</footer>
+
 			<section class="modal modal-login">
 				<h2>Личный кабинет</h2>
 				<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
