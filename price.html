@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Барбершоп</title>
+		<title>Barbershop | price</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" 
 		rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet" >	
@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 	</head>
 	<body class="inner-page">
+
 		<header class="main-header">
 			<nav class="main-navigation container">
 				<a class="main-header-logo" href="index.html">
@@ -17,11 +18,11 @@
 					alt="Логотип барбершопа">
 				</a>
 				<ul class="site-navigation">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
+					<li><a href="index.html#info-point">Информация</a></li>
+					<li><a href="index.html#news-point">Новости</a></li>
 					<li class="site-navigation-current"><a>Прайс-лист</a></li>
 					<li><a href="catalog.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="index.html#contacts-point">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
 					<li>
@@ -30,7 +31,9 @@
 				</ul>
 			</nav>
 		</header>
+
 		<main class="container">
+
 			<div class="inner-page-container">
 				<h1 class="page-title">Прайс-лист</h1>
 				<ul class="breadcrumbs">
@@ -38,6 +41,7 @@
 					<li class="breadcrumbs-current">Прайс-лист</li>
 				</ul>
 			</div>
+
 			<section class="inner-content">
 				<h2 class="big-heading">Истинно мужская классика</h2>
 				<div class="inner-columns">
@@ -78,6 +82,7 @@
 					</div>
 				</div>
 			</section>
+
 		</main>
 		
 		<footer class="main-footer">
@@ -121,30 +126,32 @@
 			</div>
 		</footer>
 
-			<section class="modal modal-login">
-				<h2>Личный кабинет</h2>
-				<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-					<p>
-						<label class="visually-hidden" for="user-login">Логин</label>
-						<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-					</p>
-					<p>
-						<label class="visually-hidden" for="user-password">Пароль</label>
-						<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-					</p>
-					<p class="login-help">
-						<label class="login-checkbox">
-							<input type="checkbox" name="remember" class="visually-hidden">
-							<span class="checkbox-indicator"></span>
-							Запомните меня							
-						</label>
-						<a class="restore" href="#">Я забыл пароль!</a>
-					</p>
-					<button class="button" type="submit">Войти</button>
-				</form>
-				<button class="modal-close" type="button">Закрыть</button>
-			</section>
+		<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+				</p>
+				<p class="login-help">
+					<label class="login-checkbox">
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Запомните меня							
+					</label>
+					<a class="restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button" type="submit">Войти</button>
+			</form>
+			<button class="modal-close" type="button">Закрыть</button>
+		</section>
+
 		<script src="js/popup.js"></script>		
+
 	</body>
 </html>
