@@ -18,11 +18,11 @@
 					<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа">
 				</a>
 					<ul class="site-navigation">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
+					<li><a href="index.html#info-point">Информация</a></li>
+					<li><a href="index.html#news-point">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
 					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="index.html#contacts-point">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
 					<li><a class="login-link" href="login.html">Вход</a></li>
@@ -35,7 +35,7 @@
 			<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Магазин</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="#">Средства для ухода</a></li>
 				<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
 			</ul>
@@ -124,29 +124,32 @@
 			</div>
 		</footer>
 
-			<section class="modal modal-login">
-				<h2>Личный кабинет</h2>
-				<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
-				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-					<p>
-						<label class="visually-hidden" for="user-login">Логин</label>
-						<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-					</p>
-					<p>
-						<label class="visually-hidden" for="user-password">Пароль</label>
-						<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-					</p>
-					<p class="login-help">
-						<label class="login-checkbox">
-							<input type="checkbox" name="remember" class="visually-hidden">
-							<span class="checkbox-indicator"></span>
-							Запомните меня							
-						</label>
-						<a class="restore" href="#">Я забыл пароль!</a>
-					</p>
-					<button class="button" type="submit">Войти</button>
-				</form>
-				<button class="modal-close" type="button">Закрыть</button>
-			</section>
+		<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+				</p>
+				<p class="login-help">
+					<label class="login-checkbox">
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Запомните меня							
+					</label>
+					<a class="restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button" type="submit">Войти</button>
+			</form>
+			<button class="modal-close" type="button">Закрыть</button>
+		</section>
+
+		<script src="js/popup.js"></script>		
+
 	</body>
 </html>
