@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Барбершоп</title>
+		<title>Barbershop | catalog</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" 
 		rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">	
@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 	</head>
 	<body class="inner-page">
+
 		<header class="main-header">
 			<nav class="main-navigation container">
 				<a class="main-header-logo" href="index.html">
@@ -17,11 +18,11 @@
 					alt="Логотип барбершопа">
 				</a>	
 				<ul class="site-navigation">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
+					<li><a href="index.html#info-point">Информация</a></li>
+					<li><a href="index.html#news-point">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
 					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="index.html#contacts-point">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
 					<li>
@@ -30,17 +31,22 @@
 				</ul>
 			</nav>
 		</header>		
+
 		<main class="container">
-			<h1 class="page-title">Средства для ухода</h1>
+
+			<h1 class="page-title">Barbershop - магазин</h1>
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
 				<li class="breadcrumbs-current">Средства для ухода</li>
 			</ul>
+
 			<div class="catalog-columns">
+
 				<section class="filters">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
 					<form class="filter" method="get" action="htttps://echo.htmlacademy.ru">
+
 						<fieldset>
 							<legend>Производители:</legend>
 							<ul>
@@ -70,6 +76,7 @@
 								</li>
 							</ul>
 						</fieldset>
+
 						<fieldset>
 							<legend>Группы товаров:</legend>
 							<ul>
@@ -87,9 +94,11 @@
 								</li>
 							</ul>
 						</fieldset>
+						
 						<button class="filter-button button" type="submit">Показать</button>	
 					</form>
 				</section>
+
 				<section class="catalog">
 					<h2>Список средств для ухода</h2>
 					<ul class="catalog-list">
@@ -261,6 +270,8 @@
 				</form>
 				<button class="modal-close" type="button">Закрыть</button>
 			</section>
+
 		<script src="js/popup.js"></script>
+
 	</body>
 </html>
