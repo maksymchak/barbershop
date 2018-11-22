@@ -466,16 +466,60 @@ a {
 
 .filter fieldset {
 	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 .filter legend {
 	font-size: 24px;
 	line-height: 30px;
+  margin-bottom: 30px;	
 }
 
 .filter ul {
 	list-style: none;
 	line-height: 18px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.filter-option {
+	margin-bottom: 19px;
+  line-height: 18px;
+  padding-right: 1px;
+  position: relative;
+}
+
+.filter-input-checkbox + label:before,
+.filter-input-radio + label:before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../img/checkbox.png) no-repeat;
+  vertical-align: middle;
+  position: absolute;
+  left: -40px;
+  top: -2px;	
+}
+
+.filter-input-radio + label:before {
+	background: url(../img/radio.png) no-repeat;
+}
+
+.filter-input-checkbox:checked + label:before,
+.filter-input-radio:checked + label:before {
+	background-position: 0px -20px;	
+}
+
+.filter-input-checkbox:disabled + label:before,
+.filter-input-radio:disabled + label:before {
+  opacity: 0.3;
+}
+
+.filter-option .disabled {
+  opacity: 0.3;
+  color: #000000;
 }
 
 .filter-input:hover + label,
