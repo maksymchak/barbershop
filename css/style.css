@@ -536,54 +536,100 @@ a {
 	width: 700px;
 }
 
-.catalog-list {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
+.items {
+  font-size: 0;
+  margin-bottom: -20px;
+}
+
+.item-card {
+  display: inline-block;
+  margin:0 20px 20px 0;
+  font-size: 14px;
+  vertical-align: top;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+  border-radius: 1px; 
+  width: 220px;
+}
+
+.item-card:hover {
+  box-shadow: 5px 5px 25px 0 rgba(0, 1, 1, 0.3);
+}
+
+.item-card:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.item-card h3 {
 	margin: 0;
-	margin-bottom: 25px;
-	list-style: none;
+	padding: 0;
 }
 
-.catalog-item {
-	width: 220px;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	background-color: #f8f8f8;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.catalog-item:nth-child(3n) {
-	margin-right: 0;
-}
-
-.catalog-item:hover {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.catalog-item a {
+.item-card-description h3 {
+	text-transform: none;
 	color: #000000;
 }
 
-.catalog-item h3 {
-	font-size: 14px;
-	line-height: 18px;
+.item-card-description h3:hover,
+.item-card-description h3:focus {
+	color: #000000;
+	color: #663d15;
 }
 
-.catalog-category {
-	text-transform: none;
+.item-card .img-wrapper {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
 }
 
-.catalog-item-price b {
-	font-size: 14px;
-	line-height: 20px;
-	text-align: center;
-	background-color: #e5e5e5;
+.img-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
-.catalog-item-price .button {
-	line-height: 20px;
-	color: #ffffff;
+.item-card-description {
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.price {
+  font-size: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.price .price-text{
+  display: inline-block;
+  color: :#000000;
+  background-color: #e5e5e5;
+  line-height: 43px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 26px;
+  text-transform: uppercase;
+  min-width: 107px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.price .price-btn {
+  display: inline-block;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #000000;
+  line-height: 43px;
+  padding: 0 19px;
+  text-align: center;
+  min-width: 77px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.price-btn:hover,
+.price-btn:focus,
+.price-btn:active {
+	background-color: #663d15;	
 }
 
 .pagination-list {
