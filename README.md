@@ -2,7 +2,7 @@
 
 ![Barbershop](assets/readme_1.png)
 
-Barbershop is an incredible website for barbers and those who need an easy, attractive and effective way to share their work with clients. It has purpose oriented design, responsive layout and special features -  3 different pages, pricing tables, shop, product page. Check out the demo of the website here: [Barbershop Live Preview]()
+Barbershop is an incredible website for barbers and those who need an easy, attractive and effective way to share their work with clients. It has purpose oriented design, responsive layout and special features -  3 different pages, pricing tables, shop, product page. Check out the demo of the website here: [Barbershop Live Preview](https://maksymchak.github.io/barbershop/)
 
 # Features:
 
